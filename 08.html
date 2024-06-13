@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Estilizando Campos de Entrada com :valid e :invalid</title>
+<style>
+/* Estilo padrão para campos de entrada */
+input[type="text"], input[type="email"], input[type="password"] {
+    width: 200px; /* Largura padrão */
+    padding: 5px; /* Espaçamento interno */
+    margin-bottom: 10px; /* Margem inferior */
+    border: 1px solid #ccc; /* Borda padrão */
+}
+
+/* Estilo para campos de entrada válidos */
+input:valid {
+    border-color: green; /* Cor da borda para campos válidos */
+}
+
+/* Estilo para campos de entrada inválidos */
+input:invalid {
+    border-color: red; /* Cor da borda para campos inválidos */
+}
+</style>
+</head>
+<body>
+
+<!-- Formulário -->
+<form>
+    <label for="username">Nome de usuário:</label><br>
+    <input type="text" id="username" name="username" required><br>
+    
+    <label for="email">E-mail:</label><br>
+    <input type="email" id="email" name="email" required><br>
+    
+    <label for="password">Senha:</label><br>
+    <input type="password" id="password" name="password" required><br>
+    
+    <input type="submit" value="Enviar">
+</form>
+
+</body>
+</html>

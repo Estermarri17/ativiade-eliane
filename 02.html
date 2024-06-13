@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Estilizando o Primeiro Parágrafo</title>
+<style>
+/* Estilo padrão para parágrafos */
+p {
+    font-size: 16px; /* Tamanho de fonte padrão */
+    color: black; /* Cor de texto padrão */
+    margin-bottom: 10px; /* Margem inferior padrão */
+}
+
+/* Estilo para o primeiro parágrafo dentro do div */
+div p:first-child {
+    font-weight: bold; /* Estilo de fonte negrito para o primeiro parágrafo */
+    color: blue; /* Cor azul para o primeiro parágrafo */
+}
+</style>
+</head>
+<body>
+
+<!-- Div com vários parágrafos -->
+<div>
+    <p>Este é o primeiro parágrafo.</p>
+    <p>Este é o segundo parágrafo.</p>
+    <p>Este é o terceiro parágrafo.</p>
+    <p>Este é o quarto parágrafo.</p>
+</div>
+
+</body>
+</html>

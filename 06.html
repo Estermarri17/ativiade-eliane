@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Estilizando Campos Habilitados e Desabilitados</title>
+<style>
+/* Estilo padrão para campos de entrada */
+input[type="text"], input[type="email"], input[type="password"] {
+    width: 200px; /* Largura padrão */
+    padding: 5px; /* Espaçamento interno */
+    margin-bottom: 10px; /* Margem inferior */
+}
+
+/* Estilo para campos habilitados */
+input:enabled {
+    background-color: #fff; /* Cor de fundo padrão para campos habilitados */
+    color: black; /* Cor de texto padrão para campos habilitados */
+}
+
+/* Estilo para campos desabilitados */
+input:disabled {
+    background-color: #f2f2f2; /* Cor de fundo para campos desabilitados */
+    color: #999; /* Cor de texto para campos desabilitados */
+}
+</style>
+</head>
+<body>
+
+<!-- Formulário -->
+<form>
+    <label for="username">Nome de usuário:</label><br>
+    <input type="text" id="username" name="username" disabled><br>
+    
+    <label for="email">E-mail:</label><br>
+    <input type="email" id="email" name="email"><br>
+    
+    <label for="password">Senha:</label><br>
+    <input type="password" id="password" name="password" disabled><br>
+    
+    <input type="submit" value="Enviar" disabled>
+</form>
+
+</body>
+</html>
